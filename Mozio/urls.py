@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
+from django.conf.urls import url
 from provider import views
+from rest_framework_swagger.views import get_swagger_view
 
+schema_view = get_swagger_view(title='Pastebin API')
 
 router = routers.DefaultRouter()
 router.register(r'provider', views.ProviderViewSet)
@@ -28,4 +31,5 @@ urlpatterns = [
     path('', include(router.urls)),
     path('area/', views.ServiceAreaList.as_view()),
     path('admin/', admin.site.urls),
+    path('document/', schema_view)
 ]

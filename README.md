@@ -40,6 +40,10 @@ Getting Started
 
 		$ python manage.py runserver
 
+	6)Run tests:
+
+		$ python manage.py tests
+
 
 Rest APIs
 ---------------

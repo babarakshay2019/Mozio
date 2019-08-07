@@ -6,7 +6,7 @@ from django.contrib.gis.geos import Point
 
 class ProviderViewSet(viewsets.ModelViewSet):
     """
-    A user can perform CURD operation in Provider
+    Provider Operations
     """
     queryset = Provider.objects.all()
     serializer_class = ProviderSerializer
@@ -14,7 +14,7 @@ class ProviderViewSet(viewsets.ModelViewSet):
 
 class ServiceAreaViewSet(viewsets.ModelViewSet):
     """
-    A user can perform CURD operation in ServiceArea
+    ServiceArea Operations
     """
     queryset = ServiceArea.objects.all()
     serializer_class = ServiceAreaSerializer

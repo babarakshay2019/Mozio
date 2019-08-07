@@ -42,7 +42,7 @@ Getting Started
 
 	6)Run tests:
 
-		$ python manage.py tests
+		$ python manage.py test
 
 
 Rest APIs
